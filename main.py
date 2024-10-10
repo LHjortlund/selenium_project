@@ -14,6 +14,5 @@ price_dollars = driver.find_element(By.CLASS_NAME, value="a-price-whole")
 price_cents = driver.find_element(By.CLASS_NAME, value="a-price-fraction")
 print(price_dollars.text + "," + price_cents.text + " dollars")
 
-
 # driver.close()
 driver.quit()
