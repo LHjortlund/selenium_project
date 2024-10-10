@@ -9,5 +9,5 @@ driver = webdriver.Chrome(options=chrome_options)
 driver.get("https://www.python.org/")
 
 search_bar = driver.find_element(By.NAME, value="q")
-print(search_bar)
+print(search_bar.tag_name)
 driver.quit()
